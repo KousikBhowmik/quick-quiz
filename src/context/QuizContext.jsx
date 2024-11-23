@@ -18,7 +18,7 @@ const QuizContextProvider = ({ children }) => {
 
   const fetchData = async () => {
     try {
-      const apiKey = import.meta.env.VITE_API_KEY;
+      const apiKey = "oJ36li7zWlYKNCNleltExUsd8i09OulMsskl7BEp";
       console.log(import.meta.env.VITE_API_KEY);
       const URL = `https://quizapi.io/api/v1/questions?apiKey=${apiKey}&limit=10&${category}${type}`;
       const response = await axios.get(URL);
